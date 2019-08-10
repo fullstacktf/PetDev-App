@@ -25,5 +25,6 @@ npm run start
 ## Misc
 
 Expo: https://expo.io/
+Expo Documentation: https://docs.expo.io/versions/latest/sdk/overview/
 Icons from: https://ionicons.com/
 Maps from: https://github.com/react-native-community/react-native-maps
