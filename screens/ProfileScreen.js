@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { Image, Text, View, StyleSheet } from 'react-native';
 
 const ProfileScreen = () => {
   const [username, setUsername] = useState('Ralph');
-  return <View>
-    <Image source={require('../assets/images/ralph.gif')} style={styles.avatarImage}/>
-    <Text>Hello {username}</Text>
-  </View>
+  return (
+    <View>
+      <Image
+        source={require('../assets/images/ralph.gif')}
+        style={styles.avatarImage}
+      />
+      <Text>HOLA Dario como te va la vida me alegro jejeje </Text>
+      <Text>Hello {username}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -20,4 +26,3 @@ const styles = StyleSheet.create({
 });
 
 export default ProfileScreen;
-
