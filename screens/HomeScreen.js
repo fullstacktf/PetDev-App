@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, } from 'react-native';
 import MapView from 'react-native-maps';
+import { Header } from "native-base";
+
+
 
 const INITIAL_MAP_INITIAL_REGION = {
   latitude: 28.462664409289054,
@@ -12,11 +15,14 @@ const INITIAL_MAP_INITIAL_REGION = {
 export default function HomeScreen() {
   const [mapInitialRegion, setMapInitialRegion] = React.useState(INITIAL_MAP_INITIAL_REGION);
 
-  return <View style={styles.container}>
+  return <View  style={styles.container}>
+    <Header/>
     <MapView initialRegion={mapInitialRegion}
              region={mapInitialRegion}
-             style={styles.map}/>
+             style={styles.map}></MapView>
+
   </View>;
+  
 }
 
 HomeScreen.navigationOptions = {
@@ -29,6 +35,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   map: {
-    flex: 1
+    flex: 1,
+    
+    
   }
 });
